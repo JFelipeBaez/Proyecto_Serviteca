@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+
+    <html>
+        <h:head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>Software Apoyo Serviteca</title>
+        </h:head>
+        <h:body>
+            <h:form>
+                <p:messages id="messages" showDetail="true" closable="true">
+                    <p:autoUpdate/>
+                </p:messages>
+                <p:panel header="Cliente">
+                    <br/>
+                    <span class="ui-float-label">
+                        <p:inputText id="nombre" value="#{ManejadorBean.nombre}"/>
+                        <p:outputLabel for="@previous" value="Nombre"/>
+                    </span>
+                    <br/>
+                    <span class="ui-float-label">
+                        <p:inputText id="numeroPedido" value="#{ManejadorBean.numeroPedido}"/>
+                        <p:outputLabel for="@previous" value="Numero de Pedido"/>
+                    </span>
+                    <br/>
+                    <span class="ui-float-label">
+                        <p:inputText id="cantidadServicios" value="#{ManejadorBean.numeroServicios}"/>
+                        <p:outputLabel for="@previous" value="Cantidad de Servicios"/>
+                    </span>
+                </p:panel>
+            </h:form>
+        </h:body>
+    </html>
+</f:view>
