@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+
+    <html>
+        <h:head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>Software Apoyo Serviteca - Home</title>
+        </h:head>
+        <h:body>
+            <h:form>
+                <p:messages id="messages" showDetail="true" closable="true">
+                    <p:autoUpdate/>
+                </p:messages>
+                <h:panelGroup style="display:block; text-align:center">
+                    <p:panel header="SERVITECA BM">    
+                        <p>Con este software podra agendar una cita para visitar la serviteca</p>
+                        <p>Para poder agendar una cita tendra que llenar unos datos</p>
+                        <p:separator>
+                            <p:commandButton value="Agendar Nueva Cita" action="#{inicioBean.agendardor()}" />
+                            <p:commandButton value="Consultar Cita" action="#{visualizarBean.visualizar()}" />
+                            <p>Si ya tienes una cita agendada puedes consultarla</p>
+                        </p:separator>
+                        <p:separator>
+                        </p:separator>
+                        <p:separator>
+                            <div>
+                                <h5>Johan Felipe Báez Maldonado</h5>
+                                <h5>Proyecto de Ingenieria de Software 1</h5>
+                                <h5>Profesor: Giovanny Briceño</h5>
+                                <h5>Facultad de Ingeniería de Sistemas</h5>
+                                <h5>Universidad Central</h5>
+                            </div>
+                        </p:separator>
+                    </p:panel>    
+                </h:panelGroup>
+            </h:form>
+        </h:body>
+    </html>
+</f:view>
